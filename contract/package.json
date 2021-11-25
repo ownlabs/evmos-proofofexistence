@@ -8,6 +8,7 @@
         "build:metadata": "node scripts/build_metadata.js",
         "test": "truffle test",
         "test:notarize": "node tests/notarize.js",
+        "test:verify": "node tests/verify.js",
         "deploy": "node deploy.js"
     },
     "author": "dev@nftstud.io",

@@ -19,7 +19,8 @@ contract PoE is Ownable {
         owners[_hash] = msg.sender;
     }
 
-    function get(string memory _hash) public view returns (uint256) {
+    function verify(string memory _hash) public view returns (uint256) {
+        require(notarized[_hash] > 0, "PoE: Hash never notarized");
         return notarized[_hash];
     }
 }
