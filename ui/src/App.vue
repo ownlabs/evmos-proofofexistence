@@ -61,6 +61,9 @@ body {
 .dapp {
   padding: 10vh 0;
 }
+.tab-item {
+  padding: 5vh 0;
+}
 </style>
 
 
