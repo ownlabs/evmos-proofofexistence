@@ -36,7 +36,7 @@
       <!-- Verify Tab -->
       <b-tab-item label="Verify">
         <h2 class="title is-size-4">Drag file to verify</h2>
-        <b-field>
+        <b-field style="text-align:center">
           <b-upload
             v-on:input="calculateHash('verifyFile')"
             v-model="verifyFile"
@@ -47,7 +47,7 @@
                 <p>
                   <b-icon icon="upload" size="is-large"></b-icon>
                 </p>
-                <p>Drop your file here or click to upload</p>
+                <p>Drop your file here or click to verify</p>
               </div>
             </section>
           </b-upload><br><br>

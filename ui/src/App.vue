@@ -64,6 +64,9 @@ body {
 .tab-item {
   padding: 5vh 0;
 }
+.field.has-addons {
+  display: inline-block;
+}
 </style>
 
 
@@ -86,7 +89,7 @@ export default {
         // Check if network is desired one
         app.selected_network = await app.web3.eth.net.getId();
         if (app.selected_network !== 9000) {
-          alert('Wrong network!')
+          alert("Wrong network!");
         } else {
           // Request accounts
           await window.ethereum.send("eth_requestAccounts");

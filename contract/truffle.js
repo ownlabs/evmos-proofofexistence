@@ -17,6 +17,13 @@ module.exports = {
             gasPrice: 15000000000,
             network_id: "*", // Match any network id
         },
+        evmos: {
+            provider: () => new HDWalletProvider(process.env.MNEMONIC, process.env.PROVIDER),
+            port: 8545,
+            gasPrice: "10000000000",
+            network_id: "*",
+            skipDryRun: true
+        },
         mumbai: {
             provider: () => new HDWalletProvider(process.env.MNEMONIC, process.env.PROVIDER),
             network_id: 80001,
